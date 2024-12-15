@@ -1,0 +1,35 @@
+/* Customize default notification cosmatic of antd notification api */
+.ant-notification-notice {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 41px !important;
+  max-width: 385px;
+}
+.ant-notification-notice-message {
+  display: none;
+}
+.ant-notification-notice-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.ant-notification-notice-icon {
+  top: 15px;
+}
+.ant-notification-notice .ant-notification-notice-close {
+  top: 18px;
+  right: 15px;
+  width: auto;
+  height: auto;
+}
+.ant-notification-notice .ant-notification-notice-close:hover {
+  color: inherit;
+  background-color: inherit;
+}
+.ant-notification-notice
+  .ant-notification-notice-with-icon
+  .ant-notification-notice-description {
+  margin-inline-start: 28px;
+}

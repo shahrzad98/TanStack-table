@@ -1,0 +1,42 @@
+# Docker files
+Dockerfile*
+docker-compose*
+
+# git
+.git
+.gitignore
+.do
+
+#
+# OS X
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#
+# React
+#
+node_modules
+build
+log
+tmp
+*.md
+**.orig
+
+# Ignore default env files
+*.env.default
+# NOTE: Do *not* ignore `.env`, it is required by npm build for production

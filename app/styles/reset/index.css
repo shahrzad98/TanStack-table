@@ -1,0 +1,9 @@
+@import "./css-reset.css";
+@import "./notification.css";
+
+/* NOTE from Kave 
+The files that are imported here are dedicated to 
+override the default behaviour of antd hence updating
+the antd version will require to update the files here
+and the files inside the reset folder
+*/

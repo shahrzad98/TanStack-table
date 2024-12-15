@@ -1,0 +1,25 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:storybook/recommended",
+    "prettier",
+     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+   "@typescript-eslint/ban-ts-comment": "off",
+   "@typescript-eslint/no-explicit-any": "warn",
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "no-console": "warn"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+    // This allows the use of import/export statements
+  }
+}

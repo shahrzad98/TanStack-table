@@ -1,0 +1,77 @@
+@import "variables";
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: $font-family;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+.customDropdownMenu {
+
+  ul.ant-dropdown-menu {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .ant-dropdown-menu li.ant-dropdown-menu-item {
+    height: 36px;
+    padding: 8px 16px;
+    background-color: $white-color;
+    margin-bottom: 2px;
+    border-radius: 0;
+
+
+    .ant-row {
+      align-items: center;
+
+      > span {
+        color: $secondary-color;
+      }
+
+      svg {
+        width: 25px;
+        height: 18px;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.ant-dropdown-trigger {
+  cursor: pointer
+}
+
+.customTab {
+  .ant-tabs-tab {
+    margin: 0 !important;
+  }
+}
+
+
+.tracker {
+  align-items: center;
+  svg {
+  margin-right: 10px;
+  }
+}

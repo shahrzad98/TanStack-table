@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: nextjs
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3001:3000
+  storybook:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: storybook
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 6006:6006
+    command: yarn storybook

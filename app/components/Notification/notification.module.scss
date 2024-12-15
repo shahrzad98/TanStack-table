@@ -1,0 +1,54 @@
+// Brand colors
+$color-primary: #2684ff;
+$color-secondary: #5d6671;
+$color-divnotesGreen: #199e0b;
+
+// Component State colors
+$color-disabled: #dadada;
+$color-selected: #d9edff;
+
+// Standard color names
+$color-white: #ffffff;
+$color-black: #000000;
+$color-inchworm: #fff2d8;
+$color-paleCyan: #dcffe6;
+$color-peachOrange: #ffdfdc;
+$color-pristine: #f3f8fc;
+
+// Other named colors included in Figma design
+$color-lightGray: #b5b5b5;
+$color-menu: #eef1f4;
+$color-background: #f3f8fc;
+$color-add: #4ecb71;
+$color-alert: #ffab00;
+$color-error: #ea4335;
+$color-success: #4ecb71;
+
+// a simple mixin to add a border to the top of a notification
+@mixin base-notification($core-color, $background-color) {
+  background-color: $background-color;
+  color: $color-black;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 18px 15px;
+  border: 1px solid $core-color;
+  span > svg {
+    color: $core-color;
+  }
+}
+
+.success {
+  @include base-notification($color-success, $color-paleCyan);
+}
+
+.error {
+  @include base-notification($color-error, $color-peachOrange);
+}
+
+.alert {
+  @include base-notification($color-alert, $color-inchworm);
+}
+
+.info {
+  @include base-notification($color-primary, $color-pristine);
+}
